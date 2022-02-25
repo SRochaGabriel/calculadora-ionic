@@ -15,20 +15,36 @@
 
   <div id="container">
     <ion-item color="dark">
-      <ion-label position="floating">Digite o primeiro número</ion-label>
-      <ion-input type="number" [(ngModel)]="n1"></ion-input>
-    </ion-item>
-
-    <ion-item color="dark">
-      <ion-label position="floating">Digite o segundo número</ion-label>
-      <ion-input type="number" [(ngModel)]="n2"></ion-input>
+      <ion-input inputmode="numeric" placeholder="Digite o primeiro número" type="number" [(ngModel)]="n1"></ion-input>
     </ion-item><br>
 
-    <ion-button shape="round" expand="full" (click)="somar()" color="success">
-      <ion-icon name="add-circle"></ion-icon>
-      Somar
-    </ion-button>
+    <ion-item color="dark">
+      <ion-input inputmode="numeric" placeholder="Digite o segundo número" type="number" [(ngModel)]="n2"></ion-input>
+    </ion-item><br>
 
-    <ion-input readonly="true" value="{{res}}"></ion-input>
+    <ion-row>
+      <ion-col>
+        <ion-button color="light" fill="outline" shape="round" (click)="somar()">
+          <ion-icon slot="icon-only" src="../assets/icon/sum.svg"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light" fill="outline" shape="round" (click)="subtrair()">
+          <ion-icon slot="icon-only" src="../assets/icon/subtraction.svg"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light" fill="outline" shape="round" (click)="multiplicar()">
+          <ion-icon slot="icon-only" src="../assets/icon/multiplication.svg"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light" fill="outline" shape="round" (click)="divisao()">
+          <ion-icon slot="icon-only" src="../assets/icon/division.svg"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row><br>
+
+    <b><ion-input readonly="true" value="{{res}}"></ion-input></b>
   </div>
 </ion-content>

@@ -17,4 +17,16 @@ export class HomePage {
     this.res = this.n1 + this.n2
   }
 
+  subtrair() {
+    this.res = this.n1 - this.n2
+  }
+
+  multiplicar() {
+    this.res = this.n1 * this.n2
+  }
+
+  divisao() {
+    this.res = this.n1 / this.n2
+  }
+
 }
