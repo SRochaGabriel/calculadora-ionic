@@ -1,2 +1,2 @@
 # calculadora-ionic
-Simple ionic calculator with sum, subtraction, multiplication and divison functions
+Simple calculator made with ionic and angular
